@@ -91,22 +91,31 @@
     .service-card:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
     .service-card h3 { color: #446E9E; margin-bottom: 10px; }
 
-    /* Gallery Section */
+    /* ✅ Gallery section styling */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 40px;
+      gap: 25px;
     }
-    .gallery img {
+    .gallery-item {
+      text-align: center;
+    }
+    .gallery-item img {
       width: 100%;
       height: 220px;
       object-fit: cover;
       border-radius: 10px;
-      transition: transform 0.3s ease;
+      border: 1px solid #ddd;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .gallery img:hover {
-      transform: scale(1.05);
+    .gallery-item img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .gallery-item p {
+      margin-top: 10px;
+      font-weight: 500;
+      color: #2E5179;
     }
 
     form {
@@ -197,25 +206,29 @@
     </div>
   </section>
 
-  <!-- ✅ Machines Gallery Section -->
+  <!-- ✅ New Machines Gallery Section -->
   <section id="gallery" style="background:#f9f9f9; padding:60px 8%;">
-    <h2 style="color:#446E9E; text-align:center;">Our Machines</h2>
+    <h2 style="color:#446E9E; text-align:center; margin-bottom:30px;">Our Machines</h2>
     <div class="gallery">
-      <div style="text-align:center;">
-        <img src="images/crane.jpg" alt="Crane">
-        <p style="margin-top:10px; font-weight:500;">Crane</p>
+      <div class="gallery-item">
+        <img src="images/grovecrane.png" alt="Grove Crane">
+        <p>Grove Crane</p>
       </div>
-      <div style="text-align:center;">
-        <img src="images/roller.jpg" alt="Roller">
-        <p style="margin-top:10px; font-weight:500;">Roller</p>
+      <div class="gallery-item">
+        <img src="images/powerplus.png" alt="Powerplus Crane">
+        <p>Powerplus Crane</p>
       </div>
-      <div style="text-align:center;">
-        <img src="images/excavator.jpg" alt="Excavator">
-        <p style="margin-top:10px; font-weight:500;">Excavator</p>
+      <div class="gallery-item">
+        <img src="images/roller.png" alt="Roller">
+        <p>Roller</p>
       </div>
-      <div style="text-align:center;">
-        <img src="images/lowbed.jpg" alt="Lowbed Truck">
-        <p style="margin-top:10px; font-weight:500;">Lowbed Truck</p>
+      <div class="gallery-item">
+        <img src="images/lowbedhead.png" alt="Lowbed Head">
+        <p>Lowbed Head</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/lowbedback.png" alt="Lowbed Back">
+        <p>Lowbed Back</p>
       </div>
     </div>
   </section>
