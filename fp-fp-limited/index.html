@@ -12,9 +12,7 @@
       background: linear-gradient(90deg, #446E9E, #2E5179);
       color: white;
       padding: 20px 5%;
-      display: flex;cd fpfpwebpage
-code .
-
+      display: flex;
       justify-content: space-between;
       align-items: center;
     }
@@ -92,6 +90,33 @@ code .
     }
     .service-card:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
     .service-card h3 { color: #446E9E; margin-bottom: 10px; }
+
+    /* ✅ Gallery section styling */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .gallery-item {
+      text-align: center;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .gallery-item p {
+      margin-top: 10px;
+      font-weight: 500;
+      color: #2E5179;
+    }
 
     form {
       max-width: 500px;
@@ -181,6 +206,33 @@ code .
     </div>
   </section>
 
+  <!-- ✅ New Machines Gallery Section -->
+  <section id="gallery" style="background:#f9f9f9; padding:60px 8%;">
+    <h2 style="color:#446E9E; text-align:center; margin-bottom:30px;">Our Machines</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/grovecrane.png" alt="Grove Crane">
+        <p>Grove Crane</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/powerplus.png" alt="Powerplus Crane">
+        <p>Powerplus Crane</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/roller.png" alt="Roller">
+        <p>Roller</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/lowbedhead.png" alt="Lowbed Head">
+        <p>Lowbed Head</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/lowbedback.png" alt="Lowbed Back">
+        <p>Lowbed Back</p>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" style="background:#f5f5f5;">
     <h2 style="color:#446E9E; text-align:center;">Contact Us</h2>
     <p style="text-align:center; margin-top:10px;">
@@ -206,4 +258,3 @@ code .
 
 </body>
 </html>
-
