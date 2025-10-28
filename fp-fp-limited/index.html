@@ -100,14 +100,17 @@
     .gallery-item {
       text-align: center;
     }
-    .gallery-item img {
+        .gallery-item img {
       width: 100%;
-      height: 220px;
-      object-fit: cover;
+      height: auto; /* ✅ Keeps image proportions */
+      object-fit: contain; /* ✅ Ensures full image is visible */
       border-radius: 10px;
       border: 1px solid #ddd;
+      background-color: #f9f9f9; /* Adds soft frame if image doesn’t fill area */
+      padding: 5px; /* Adds small spacing around images */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .gallery-item img:hover {
       transform: scale(1.03);
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -258,4 +261,5 @@
 
 </body>
 </html>
+
 
