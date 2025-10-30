@@ -27,7 +27,6 @@
     }
     nav a:hover { text-decoration: underline; }
 
-    /* Hero section with refined soft tones */
     .hero {
       background: linear-gradient(180deg, #EEDC5B, #ffffff);
       display: flex;
@@ -91,34 +90,24 @@
     .service-card:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
     .service-card h3 { color: #446E9E; margin-bottom: 10px; }
 
-    /* ✅ Gallery section styling */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 25px;
     }
-    .gallery-item {
-      text-align: center;
-    }
-        .gallery-item img {
+    .gallery-item img {
       width: 100%;
-      height: auto; /* ✅ Keeps image proportions */
-      object-fit: contain; /* ✅ Ensures full image is visible */
+      height: auto;
+      object-fit: contain;
       border-radius: 10px;
       border: 1px solid #ddd;
-      background-color: #f9f9f9; /* Adds soft frame if image doesn’t fill area */
-      padding: 5px; /* Adds small spacing around images */
+      background-color: #f9f9f9;
+      padding: 5px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .gallery-item img:hover {
       transform: scale(1.03);
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    .gallery-item p {
-      margin-top: 10px;
-      font-weight: 500;
-      color: #2E5179;
     }
 
     form {
@@ -167,7 +156,6 @@
     </nav>
   </header>
 
-  <!-- ✅ Hero Section with new refined colors -->
   <section class="hero">
     <h1>Welcome to FP & FP Limited</h1>
     <h2>Where Demand Meets Efficiency</h2>
@@ -209,30 +197,34 @@
     </div>
   </section>
 
-  <!-- ✅ New Machines Gallery Section -->
   <section id="gallery" style="background:#f9f9f9; padding:60px 8%;">
     <h2 style="color:#446E9E; text-align:center; margin-bottom:30px;">Our Machines</h2>
     <div class="gallery">
-      <div class="gallery-item">
-        <img src="images/grovecrane.png" alt="Grove Crane">
-        <p>Grove Crane</p>
-      </div>
-      <div class="gallery-item">
-        <img src="images/powerpluscrane.png" alt="Powerplus Crane">
-        <p>Powerplus Crane</p>
-      </div>
-      <div class="gallery-item">
-        <img src="images/roller.png" alt="Roller">
-        <p>Roller</p>
-      </div>
-      <div class="gallery-item">
-        <img src="images/lowbedhead.png" alt="Lowbed Head">
-        <p>Lowbed Head</p>
-      </div>
-      <div class="gallery-item">
-        <img src="images/lowbedback.png" alt="Lowbed Back">
-        <p>Lowbed Back</p>
-      </div>
+      <div class="gallery-item"><img src="images/grovecrane.png" alt="Grove Crane"></div>
+      <div class="gallery-item"><img src="images/powerpluscrane.png" alt="Powerplus Crane"></div>
+      <div class="gallery-item"><img src="images/roller.png" alt="Roller"></div>
+      <div class="gallery-item"><img src="images/lowbedhead.png" alt="Lowbed Head"></div>
+      <div class="gallery-item"><img src="images/lowbedback.png" alt="Lowbed Back"></div>
+    </div>
+  </section>
+
+  <!-- ✅ New Machines in Action Catalogue -->
+  <section id="catalogue" style="background:#fff; padding:60px 8%;">
+    <h2 style="color:#446E9E; text-align:center; margin-bottom:30px;">FP & FP Limited Machines in Action</h2>
+    <div class="gallery">
+      <div class="gallery-item"><img src="images/noboomyetcrane.JPG" alt="No Boom Yet Crane"></div>
+      <div class="gallery-item"><img src="images/boomoutcrane.JPG" alt="Boom Out Crane"></div>
+      <div class="gallery-item"><img src="images/lowbedsmallload3.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/morecraneworkpic.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/workpiccrane.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/craneatwork2.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/lowbedboatload.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/craneheavylifting.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/cranepic2.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/anothercranepic.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/craneatwork1.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/lowbedloaded.JPG" alt=""></div>
+      <div class="gallery-item"><img src="images/cranepic1.JPG" alt=""></div>
     </div>
   </section>
 
@@ -245,7 +237,6 @@
       📧 <a href="mailto:femiowolabiadisa@gmail.com">femiowolabiadisa@gmail.com</a>
     </p>
 
-    <!-- ✅ Contact Form (Formspree + thank-you redirect) -->
     <form action="https://formspree.io/f/xgvnbyod" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
@@ -261,5 +252,3 @@
 
 </body>
 </html>
-
-
