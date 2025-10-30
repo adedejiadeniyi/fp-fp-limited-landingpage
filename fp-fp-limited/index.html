@@ -110,6 +110,26 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+
+    .video-item iframe {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .video-item p {
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #333;
+    }
+
     form {
       max-width: 500px;
       margin: 30px auto;
@@ -208,9 +228,39 @@
     </div>
   </section>
 
-  <!-- ✅ New Machines in Action Catalogue -->
-  <section id="catalogue" style="background:#fff; padding:60px 8%;">
+  <!-- ✅ New Embedded Video Updates Section -->
+  <section id="videos" style="background:#fff; padding:60px 8%;">
     <h2 style="color:#446E9E; text-align:center; margin-bottom:30px;">FP & FP Limited Machines in Action</h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/qR29rKoXles" title="Crane offloading container" frameborder="0" allowfullscreen></iframe>
+        <p>Crane offloading container at Climax Lubricants Industries, Interchange, Lagos/Ibadan Expressway, Ogun state.</p>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/d7wDUr4wVco" title="40 tons Crane loading precast" frameborder="0" allowfullscreen></iframe>
+        <p>40 tons Crane loading precast on flatbody at Lotto, Mowe, Ogun state.</p>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/DkG7hJRk4qE" title="Testing our Payloader" frameborder="0" allowfullscreen></iframe>
+        <p>Testing our Payloader</p>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/VeGLVOS-7FQ" title="Powerplus Crane" frameborder="0" allowfullscreen></iframe>
+        <p>Our Powerplus Crane for hire</p>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/p9-t6Y27Bzo" title="Grove Crane" frameborder="0" allowfullscreen></iframe>
+        <p>Our 40 tons Grove crane for hire and sale</p>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/H0_6nDVdyXs" title="Roller" frameborder="0" allowfullscreen></iframe>
+        <p>Our roller for hire</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Existing Machines Catalogue (unchanged) -->
+  <section id="catalogue" style="background:#fff; padding:60px 8%;">
     <div class="gallery">
       <div class="gallery-item"><img src="images/noboomyetcrane.JPG" alt="No Boom Yet Crane"></div>
       <div class="gallery-item"><img src="images/boomoutcrane.JPG" alt="Boom Out Crane"></div>
